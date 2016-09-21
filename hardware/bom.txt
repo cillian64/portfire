@@ -1,0 +1,12 @@
+Description,farnell part,mfgr part, price ea, qty per board
+
+Schottky rectifiers, 1861422, SS110B, 0.06, 16
+Input TVS, 1899460, SMAJ58A, 0.10, 1
+PD controller, 2514586, MAX5969AETB+T, 3.31, 1
+3u3 pass inductor, 1865686, ELLATP3R3NB, 0.51, 1
+22uF 63V electrolytic, CA07914, EEEFK1J220P, 0.24, 1
+DCDC controller, 2514229, MAX17503ATP+, 3.24, 1
+22uF switch inductor, 2215751, SLF12575T-220M4R0-PF, 1.02, 1
+output capacitor, 2320948, MC1210B226M160CT, 0.6, 2
+
+Total cost for PoE per board: £10.50
