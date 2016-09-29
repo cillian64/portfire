@@ -665,144 +665,68 @@ NoConn ~ 4500 4000
 $Comp
 L D_Small D?
 U 1 1 57E8CFA4
-P 1500 4250
-F 0 "D?" H 1450 4330 50  0000 L CNN
-F 1 "D_Small" H 1350 4170 50  0001 L CNN
-F 2 "" V 1500 4250 50  0000 C CNN
-F 3 "" V 1500 4250 50  0000 C CNN
-	1    1500 4250
-	0    1    1    0   
-$EndComp
-$Comp
-L D_Small D?
-U 1 1 57E8D0D0
-P 1800 4250
-F 0 "D?" H 1750 4330 50  0000 L CNN
-F 1 "D_Small" H 1650 4170 50  0001 L CNN
-F 2 "" V 1800 4250 50  0000 C CNN
-F 3 "" V 1800 4250 50  0000 C CNN
-	1    1800 4250
-	0    1    1    0   
-$EndComp
-$Comp
-L D_Small D?
-U 1 1 57E8D179
-P 1500 4500
-F 0 "D?" H 1450 4580 50  0000 L CNN
-F 1 "D_Small" H 1350 4420 50  0001 L CNN
-F 2 "" V 1500 4500 50  0000 C CNN
-F 3 "" V 1500 4500 50  0000 C CNN
-	1    1500 4500
-	0    1    1    0   
-$EndComp
-$Comp
-L D_Small D?
-U 1 1 57E8D219
-P 1800 4500
-F 0 "D?" H 1750 4580 50  0000 L CNN
-F 1 "D_Small" H 1650 4420 50  0001 L CNN
-F 2 "" V 1800 4500 50  0000 C CNN
-F 3 "" V 1800 4500 50  0000 C CNN
-	1    1800 4500
+P 850 4250
+F 0 "D?" H 800 4330 50  0000 L CNN
+F 1 "SS110B" H 700 4170 50  0001 L CNN
+F 2 "agg-kicad:DO-214AA-SMB" V 850 4250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1441693.pdf" V 850 4250 50  0001 C CNN
+F 4 "1861422" H 850 4250 60  0001 C CNN "Farnell"
+	1    850  4250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1500 4600 1800 4600
+	850  4600 1150 4600
 Wire Wire Line
-	1500 4350 1500 4400
+	850  4350 850  4400
 Wire Wire Line
-	1800 4350 1800 4400
+	1150 4350 1150 4400
 Wire Wire Line
-	1500 4150 1800 4150
+	850  4150 1150 4150
 Wire Wire Line
-	1650 4150 1650 4000
+	1000 4150 1000 4000
 Wire Wire Line
-	1650 4000 3700 4000
-Connection ~ 1650 4150
+	1000 4000 3700 4000
+Connection ~ 1000 4150
 Wire Wire Line
-	1650 4600 1650 4700
+	1000 4600 1000 4700
 Wire Wire Line
-	1650 4700 2950 4700
-Connection ~ 1650 4600
-Text Label 1450 4400 2    60   ~ 0
+	1000 4700 2950 4700
+Connection ~ 1000 4600
+Text Label 800  4400 2    60   ~ 0
 VA1
 Wire Wire Line
-	1500 4400 1450 4400
-Connection ~ 1500 4400
-Text Label 1850 4400 0    60   ~ 0
+	850  4400 800  4400
+Connection ~ 850  4400
+Text Label 1200 4400 0    60   ~ 0
 VA2
 Wire Wire Line
-	1800 4400 1850 4400
-Connection ~ 1800 4400
-$Comp
-L D_Small D?
-U 1 1 57E8EC5E
-P 2350 4500
-F 0 "D?" H 2300 4580 50  0000 L CNN
-F 1 "D_Small" H 2200 4420 50  0001 L CNN
-F 2 "" V 2350 4500 50  0000 C CNN
-F 3 "" V 2350 4500 50  0000 C CNN
-	1    2350 4500
-	0    1    1    0   
-$EndComp
-$Comp
-L D_Small D?
-U 1 1 57E8ED08
-P 2650 4500
-F 0 "D?" H 2600 4580 50  0000 L CNN
-F 1 "D_Small" H 2500 4420 50  0001 L CNN
-F 2 "" V 2650 4500 50  0000 C CNN
-F 3 "" V 2650 4500 50  0000 C CNN
-	1    2650 4500
-	0    1    1    0   
-$EndComp
-$Comp
-L D_Small D?
-U 1 1 57E8EDB0
-P 2350 4250
-F 0 "D?" H 2300 4330 50  0000 L CNN
-F 1 "D_Small" H 2200 4170 50  0001 L CNN
-F 2 "" V 2350 4250 50  0000 C CNN
-F 3 "" V 2350 4250 50  0000 C CNN
-	1    2350 4250
-	0    1    1    0   
-$EndComp
-$Comp
-L D_Small D?
-U 1 1 57E8EE5D
-P 2650 4250
-F 0 "D?" H 2600 4330 50  0000 L CNN
-F 1 "D_Small" H 2500 4170 50  0001 L CNN
-F 2 "" V 2650 4250 50  0000 C CNN
-F 3 "" V 2650 4250 50  0000 C CNN
-	1    2650 4250
-	0    1    1    0   
-$EndComp
+	1150 4400 1200 4400
+Connection ~ 1150 4400
 Wire Wire Line
-	2350 4600 2650 4600
+	1700 4600 2000 4600
 Wire Wire Line
-	2500 4700 2500 4600
-Connection ~ 2500 4600
+	1850 4700 1850 4600
+Connection ~ 1850 4600
 Wire Wire Line
-	2350 4150 2650 4150
+	1700 4150 2000 4150
 Wire Wire Line
-	2500 4000 2500 4150
-Connection ~ 2500 4150
+	1850 4000 1850 4150
+Connection ~ 1850 4150
 Wire Wire Line
-	2350 4350 2350 4400
+	1700 4350 1700 4400
 Wire Wire Line
-	2650 4350 2650 4400
-Text Label 2300 4400 2    60   ~ 0
+	2000 4350 2000 4400
+Text Label 1650 4400 2    60   ~ 0
 VB1
 Wire Wire Line
-	2350 4400 2300 4400
-Connection ~ 2350 4400
-Text Label 2700 4400 0    60   ~ 0
+	1700 4400 1650 4400
+Connection ~ 1700 4400
+Text Label 2050 4400 0    60   ~ 0
 VB2
 Wire Wire Line
-	2650 4400 2700 4400
-Connection ~ 2650 4400
-Connection ~ 2500 4000
+	2000 4400 2050 4400
+Connection ~ 2000 4400
+Connection ~ 1850 4000
 Wire Wire Line
 	3600 4000 3600 3650
 Wire Wire Line
@@ -813,9 +737,10 @@ L INDUCTOR L?
 U 1 1 57E90D55
 P 4250 3650
 F 0 "L?" V 4200 3650 50  0000 C CNN
-F 1 "INDUCTOR" V 4350 3650 50  0000 C CNN
-F 2 "" H 4250 3650 50  0000 C CNN
-F 3 "" H 4250 3650 50  0000 C CNN
+F 1 "3u3" V 4350 3650 50  0000 C CNN
+F 2 "hardware:ELLATP3R3NB" H 4250 3650 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2085547.pdf" H 4250 3650 50  0001 C CNN
+F 4 "1865686" H 4250 3650 60  0001 C CNN "Farnell"
 	1    4250 3650
 	0    1    1    0   
 $EndComp
@@ -836,7 +761,7 @@ Wire Wire Line
 	2950 4700 2950 4100
 Wire Wire Line
 	2950 4100 3700 4100
-Connection ~ 2500 4700
+Connection ~ 1850 4700
 Connection ~ 3700 4100
 Wire Wire Line
 	4500 4100 4650 4100
@@ -861,9 +786,10 @@ L R R?
 U 1 1 57E92232
 P 3450 4300
 F 0 "R?" V 3530 4300 50  0000 C CNN
-F 1 "R" V 3450 4300 50  0000 C CNN
-F 2 "" V 3380 4300 50  0000 C CNN
+F 1 "24k9" V 3450 4300 50  0000 C CNN
+F 2 "agg-kicad:0603" V 3380 4300 50  0001 C CNN
 F 3 "" H 3450 4300 50  0000 C CNN
+F 4 "2059450" H 3450 4300 60  0001 C CNN "Farnell"
 	1    3450 4300
 	0    1    1    0   
 $EndComp
@@ -875,9 +801,10 @@ L R R?
 U 1 1 57E92401
 P 3450 4500
 F 0 "R?" V 3530 4500 50  0000 C CNN
-F 1 "R" V 3450 4500 50  0000 C CNN
-F 2 "" V 3380 4500 50  0000 C CNN
+F 1 "619" V 3450 4500 50  0000 C CNN
+F 2 "agg-kicad:0603" V 3380 4500 50  0001 C CNN
 F 3 "" H 3450 4500 50  0000 C CNN
+F 4 "2059317" H 3450 4500 60  0001 C CNN "Farnell"
 	1    3450 4500
 	0    1    1    0   
 $EndComp
@@ -1018,21 +945,11 @@ L C C?
 U 1 1 57E9DCF5
 P 3350 2350
 F 0 "C?" H 3375 2450 50  0000 L CNN
-F 1 "100n" H 3375 2250 50  0000 L CNN
-F 2 "" H 3388 2200 50  0000 C CNN
-F 3 "" H 3350 2350 50  0000 C CNN
+F 1 "100n" H 3150 2250 50  0000 L CNN
+F 2 "agg-kicad:0603" H 3388 2200 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2121819.pdf" H 3350 2350 50  0001 C CNN
+F 4 "1650835" H 3350 2350 60  0001 C CNN "Farnell"
 	1    3350 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 57E9E2CA
-P 3550 2350
-F 0 "C?" H 3575 2450 50  0000 L CNN
-F 1 "100n" H 3575 2250 50  0000 L CNN
-F 2 "" H 3588 2200 50  0000 C CNN
-F 3 "" H 3550 2350 50  0000 C CNN
-	1    3550 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1094,51 +1011,19 @@ L C C?
 U 1 1 57EA1887
 P 2000 2200
 F 0 "C?" H 2025 2300 50  0000 L CNN
-F 1 "C" H 2025 2100 50  0000 L CNN
-F 2 "" H 2038 2050 50  0000 C CNN
-F 3 "" H 2000 2200 50  0000 C CNN
+F 1 "10n 200V" V 1850 2000 50  0000 L CNN
+F 2 "agg-kicad:0805" H 2038 2050 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2048651.pdf" H 2000 2200 50  0001 C CNN
+F 4 "1828955" H 2000 2200 60  0001 C CNN "Farnell"
 	1    2000 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2050 1700 2050 2000
-$Comp
-L C C?
-U 1 1 57EA1A7A
-P 2200 2200
-F 0 "C?" H 2225 2300 50  0000 L CNN
-F 1 "C" H 2225 2100 50  0000 L CNN
-F 2 "" H 2238 2050 50  0000 C CNN
-F 3 "" H 2200 2200 50  0000 C CNN
-	1    2200 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 57EA1C0D
-P 2400 2200
-F 0 "C?" H 2425 2300 50  0000 L CNN
-F 1 "C" H 2425 2100 50  0000 L CNN
-F 2 "" H 2438 2050 50  0000 C CNN
-F 3 "" H 2400 2200 50  0000 C CNN
-	1    2400 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2050 2000 2200 2000
 Wire Wire Line
 	2200 2000 2200 2050
-$Comp
-L C C?
-U 1 1 57EA1F75
-P 2600 2200
-F 0 "C?" H 2625 2300 50  0000 L CNN
-F 1 "C" H 2625 2100 50  0000 L CNN
-F 2 "" H 2638 2050 50  0000 C CNN
-F 3 "" H 2600 2200 50  0000 C CNN
-	1    2600 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2600 1100 2600 1950
 Wire Wire Line
@@ -1157,42 +1042,10 @@ U 1 1 57EA2A8A
 P 2000 2500
 F 0 "R?" V 2080 2500 50  0000 C CNN
 F 1 "75" V 2000 2500 50  0000 C CNN
-F 2 "" V 1930 2500 50  0000 C CNN
-F 3 "" H 2000 2500 50  0000 C CNN
+F 2 "agg-kicad:0603" V 1930 2500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2059623.pdf" H 2000 2500 50  0001 C CNN
+F 4 "2059571" H 2000 2500 60  0001 C CNN "Farnell"
 	1    2000 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 57EA2B69
-P 2200 2500
-F 0 "R?" V 2280 2500 50  0000 C CNN
-F 1 "75" V 2200 2500 50  0000 C CNN
-F 2 "" V 2130 2500 50  0000 C CNN
-F 3 "" H 2200 2500 50  0000 C CNN
-	1    2200 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 57EA2C44
-P 2400 2500
-F 0 "R?" V 2480 2500 50  0000 C CNN
-F 1 "75" V 2400 2500 50  0000 C CNN
-F 2 "" V 2330 2500 50  0000 C CNN
-F 3 "" H 2400 2500 50  0000 C CNN
-	1    2400 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 57EA2D21
-P 2600 2500
-F 0 "R?" V 2680 2500 50  0000 C CNN
-F 1 "75" V 2600 2500 50  0000 C CNN
-F 2 "" V 2530 2500 50  0000 C CNN
-F 3 "" H 2600 2500 50  0000 C CNN
-	1    2600 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1200,9 +1053,10 @@ L C C?
 U 1 1 57EA302C
 P 2300 2900
 F 0 "C?" H 2325 3000 50  0000 L CNN
-F 1 "1n" H 2325 2800 50  0000 L CNN
-F 2 "" H 2338 2750 50  0000 C CNN
-F 3 "" H 2300 2900 50  0000 C CNN
+F 1 "1n 2kV" H 2325 2800 50  0000 L CNN
+F 2 "agg-kicad:1206" H 2338 2750 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1958513.pdf" H 2300 2900 50  0001 C CNN
+F 4 "2497062" H 2300 2900 60  0001 C CNN "Farnell"
 	1    2300 2900
 	1    0    0    -1  
 $EndComp
@@ -1238,4 +1092,206 @@ Wire Wire Line
 	4100 1650 4650 1650
 Wire Wire Line
 	4100 1200 4100 1650
+$Comp
+L D_Small D?
+U 1 1 57ECA1EE
+P 1150 4250
+F 0 "D?" H 1100 4330 50  0000 L CNN
+F 1 "SS110B" H 1000 4170 50  0001 L CNN
+F 2 "agg-kicad:DO-214AA-SMB" V 1150 4250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1441693.pdf" V 1150 4250 50  0001 C CNN
+F 4 "1861422" H 1150 4250 60  0001 C CNN "Farnell"
+	1    1150 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Small D?
+U 1 1 57ECA2BC
+P 850 4500
+F 0 "D?" H 800 4580 50  0000 L CNN
+F 1 "SS110B" H 700 4420 50  0001 L CNN
+F 2 "agg-kicad:DO-214AA-SMB" V 850 4500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1441693.pdf" V 850 4500 50  0001 C CNN
+F 4 "1861422" H 850 4500 60  0001 C CNN "Farnell"
+	1    850  4500
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Small D?
+U 1 1 57ECA391
+P 1150 4500
+F 0 "D?" H 1100 4580 50  0000 L CNN
+F 1 "SS110B" H 1000 4420 50  0001 L CNN
+F 2 "agg-kicad:DO-214AA-SMB" V 1150 4500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1441693.pdf" V 1150 4500 50  0001 C CNN
+F 4 "1861422" H 1150 4500 60  0001 C CNN "Farnell"
+	1    1150 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Small D?
+U 1 1 57ECA465
+P 1700 4250
+F 0 "D?" H 1650 4330 50  0000 L CNN
+F 1 "SS110B" H 1550 4170 50  0001 L CNN
+F 2 "agg-kicad:DO-214AA-SMB" V 1700 4250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1441693.pdf" V 1700 4250 50  0001 C CNN
+F 4 "1861422" H 1700 4250 60  0001 C CNN "Farnell"
+	1    1700 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Small D?
+U 1 1 57ECA540
+P 2000 4250
+F 0 "D?" H 1950 4330 50  0000 L CNN
+F 1 "SS110B" H 1850 4170 50  0001 L CNN
+F 2 "agg-kicad:DO-214AA-SMB" V 2000 4250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1441693.pdf" V 2000 4250 50  0001 C CNN
+F 4 "1861422" H 2000 4250 60  0001 C CNN "Farnell"
+	1    2000 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Small D?
+U 1 1 57ECA61A
+P 1700 4500
+F 0 "D?" H 1650 4580 50  0000 L CNN
+F 1 "SS110B" H 1550 4420 50  0001 L CNN
+F 2 "agg-kicad:DO-214AA-SMB" V 1700 4500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1441693.pdf" V 1700 4500 50  0001 C CNN
+F 4 "1861422" H 1700 4500 60  0001 C CNN "Farnell"
+	1    1700 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Small D?
+U 1 1 57ECA6FC
+P 2000 4500
+F 0 "D?" H 1950 4580 50  0000 L CNN
+F 1 "SS110B" H 1850 4420 50  0001 L CNN
+F 2 "agg-kicad:DO-214AA-SMB" V 2000 4500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1441693.pdf" V 2000 4500 50  0001 C CNN
+F 4 "1861422" H 2000 4500 60  0001 C CNN "Farnell"
+	1    2000 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L ZENER D?
+U 1 1 57ED0899
+P 2450 4500
+F 0 "D?" H 2450 4600 50  0000 C CNN
+F 1 "SMAJ58A" H 2450 4400 50  0000 C CNN
+F 2 "agg-kicad:DO-214AC-SMA" H 2450 4500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2076055.pdf" H 2450 4500 50  0001 C CNN
+F 4 "1899460" H 2450 4500 60  0001 C CNN "Farnell"
+	1    2450 4500
+	0    1    1    0   
+$EndComp
+Connection ~ 2450 4700
+Wire Wire Line
+	2450 4300 2450 4000
+Connection ~ 2450 4000
+$Comp
+L C C?
+U 1 1 57ED0B47
+P 2700 4550
+F 0 "C?" H 2725 4650 50  0000 L CNN
+F 1 "100n 60V" H 2550 4350 50  0000 L CNN
+F 2 "agg-kicad:0805" H 2738 4400 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1958513.pdf" H 2700 4550 50  0001 C CNN
+F 4 "2496941" H 2700 4550 60  0001 C CNN "Farnell"
+	1    2700 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 4700
+Wire Wire Line
+	2700 4400 2700 4300
+Wire Wire Line
+	2700 4300 2450 4300
+Connection ~ 2450 4300
+$Comp
+L C C?
+U 1 1 57ED980D
+P 2200 2200
+F 0 "C?" H 2225 2300 50  0000 L CNN
+F 1 "10n 200V" V 1850 2000 50  0000 L CNN
+F 2 "agg-kicad:0805" H 2238 2050 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2048651.pdf" H 2200 2200 50  0001 C CNN
+F 4 "1828955" H 2200 2200 60  0001 C CNN "Farnell"
+	1    2200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57ED99C6
+P 2400 2200
+F 0 "C?" H 2425 2300 50  0000 L CNN
+F 1 "10n 200V" V 1850 2000 50  0000 L CNN
+F 2 "agg-kicad:0805" H 2438 2050 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2048651.pdf" H 2400 2200 50  0001 C CNN
+F 4 "1828955" H 2400 2200 60  0001 C CNN "Farnell"
+	1    2400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57ED9B82
+P 2600 2200
+F 0 "C?" H 2625 2300 50  0000 L CNN
+F 1 "10n 200V" V 1850 2000 50  0000 L CNN
+F 2 "agg-kicad:0805" H 2638 2050 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2048651.pdf" H 2600 2200 50  0001 C CNN
+F 4 "1828955" H 2600 2200 60  0001 C CNN "Farnell"
+	1    2600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 57EDA603
+P 2200 2500
+F 0 "R?" V 2280 2500 50  0000 C CNN
+F 1 "75" V 2200 2500 50  0000 C CNN
+F 2 "agg-kicad:0603" V 2130 2500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2059623.pdf" H 2200 2500 50  0001 C CNN
+F 4 "2059571" H 2200 2500 60  0001 C CNN "Farnell"
+	1    2200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 57EDA6E1
+P 2400 2500
+F 0 "R?" V 2480 2500 50  0000 C CNN
+F 1 "75" V 2400 2500 50  0000 C CNN
+F 2 "agg-kicad:0603" V 2330 2500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2059623.pdf" H 2400 2500 50  0001 C CNN
+F 4 "2059571" H 2400 2500 60  0001 C CNN "Farnell"
+	1    2400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 57EDA7C2
+P 2600 2500
+F 0 "R?" V 2680 2500 50  0000 C CNN
+F 1 "75" V 2600 2500 50  0000 C CNN
+F 2 "agg-kicad:0603" V 2530 2500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2059623.pdf" H 2600 2500 50  0001 C CNN
+F 4 "2059571" H 2600 2500 60  0001 C CNN "Farnell"
+	1    2600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57EDF0A3
+P 3550 2350
+F 0 "C?" H 3575 2450 50  0000 L CNN
+F 1 "100n" H 3600 2250 50  0000 L CNN
+F 2 "agg-kicad:0603" H 3588 2200 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2121819.pdf" H 3550 2350 50  0001 C CNN
+F 4 "1650835" H 3550 2350 60  0001 C CNN "Farnell"
+	1    3550 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
