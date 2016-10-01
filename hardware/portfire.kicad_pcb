@@ -3,9 +3,9 @@
   (general
     (links 98)
     (no_connects 85)
-    (area 0 0 0 0)
+    (area 24.899999 59.899999 278.33 125.732381)
     (thickness 1.6)
-    (drawings 0)
+    (drawings 4)
     (tracks 0)
     (zones 0)
     (modules 71)
@@ -3158,5 +3158,10 @@
     (pad 16 smd rect (at 4.385 -4.445) (size 1.91 0.64) (layers F.Cu F.Paste F.Mask)
       (net 28 "Net-(IC3-Pad6)"))
   )
+
+  (gr_line (start 125 60) (end 25 60) (angle 90) (layer F.Fab) (width 0.2))
+  (gr_line (start 125 110) (end 125 60) (angle 90) (layer F.Fab) (width 0.2))
+  (gr_line (start 25 110) (end 125 110) (angle 90) (layer F.Fab) (width 0.2))
+  (gr_line (start 25 60) (end 25 110) (angle 90) (layer F.Fab) (width 0.2))
 
 )
