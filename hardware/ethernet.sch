@@ -367,7 +367,7 @@ Connection ~ 1250 6250
 Wire Wire Line
 	1250 6700 1250 6800
 Wire Wire Line
-	3200 6800 1250 6800
+	1250 6800 3200 6800
 Connection ~ 1250 6700
 Text Label 1050 6500 2    60   ~ 0
 VA1
@@ -435,7 +435,7 @@ $EndComp
 Wire Wire Line
 	3950 6200 3950 6300
 Wire Wire Line
-	3200 6200 3200 6800
+	3200 6800 3200 6200
 Wire Wire Line
 	3200 6200 3950 6200
 Connection ~ 2100 6800
@@ -574,7 +574,7 @@ VB2
 Wire Wire Line
 	2000 1850 2250 1850
 Wire Wire Line
-	2250 1950 2250 1850
+	2250 1850 2250 1950
 Wire Wire Line
 	2000 1950 2300 1950
 Connection ~ 2250 1950
