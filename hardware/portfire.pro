@@ -1,4 +1,4 @@
-update=Monday, 26 September 2016 'amt' 00:05:56
+update=Sunday, 02 October 2016 'pmt' 21:53:15
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=agg-kicad/agg-kicad
+LibName31=/Users/dwt27/git/agg-kicad/lib/ic/power/tps92512
