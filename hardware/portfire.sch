@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:agg-kicad
-LIBS:tps92512
 LIBS:portfire-cache
 EELAYER 25 0
 EELAYER END
@@ -150,18 +149,6 @@ $EndComp
 Wire Wire Line
 	9250 1150 9350 1150
 $Comp
-L TPS62152 IC102
-U 1 1 57F0558B
-P 6350 4150
-F 0 "IC102" H 6050 4850 50  0000 L CNN
-F 1 "TPS62152" H 6050 3450 50  0000 L CNN
-F 2 "agg:QFN-16-EP-TI" H 6050 3350 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps62152.pdf" H 6050 3250 50  0001 L CNN
-F 4 "2382918" H 6050 3150 50  0001 L CNN "Farnell"
-	1    6350 4150
-	1    0    0    -1  
-$EndComp
-$Comp
 L +6V #PWR108
 U 1 1 57F05FAB
 P 5150 3400
@@ -259,9 +246,9 @@ F 3 "" H 5950 4850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 6750 4150
-Text Notes 5150 3650 1    60   ~ 0
+Text Notes 5150 3600 2    60   ~ 0
 PVIN
-Text Notes 5650 3600 1    60   ~ 0
+Text Notes 5750 3600 2    60   ~ 0
 AVIN
 Wire Wire Line
 	6750 4050 7100 4050
@@ -1005,4 +992,16 @@ F 4 "1830734" H 7050 2350 60  0001 C CNN "Farnell"
 $EndComp
 Text Label 3150 3150 0    60   ~ 0
 AUX_BUS_RX
+$Comp
+L TPS62152 IC?
+U 1 1 57F422C0
+P 6350 4150
+F 0 "IC?" H 6050 4850 50  0000 L CNN
+F 1 "TPS62152" H 6050 3450 50  0000 L CNN
+F 2 "agg:QFN-16-EP-TI" H 6050 3350 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps62152.pdf" H 6050 3250 50  0001 L CNN
+F 4 "2382918" H 6050 3150 50  0001 L CNN "Farnell"
+	1    6350 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:agg-kicad
-LIBS:tps92512
 LIBS:portfire-cache
 EELAYER 25 0
 EELAYER END
