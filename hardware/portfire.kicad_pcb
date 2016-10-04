@@ -3,12 +3,12 @@
   (general
     (links 412)
     (no_connects 383)
-    (area 19.899999 25 326.74 190.100001)
+    (area 19.949999 89.949999 120.050001 190.050001)
     (thickness 1.6)
     (drawings 4)
     (tracks 0)
     (zones 0)
-    (modules 195)
+    (modules 199)
     (nets 112)
   )
 
@@ -3615,7 +3615,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F298B4)
-    (at 25 179)
+    (at 33 179)
     (path /57F0F654/57F0FDA0)
     (fp_text reference P301 (at 0 0.1) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3643,7 +3643,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F298C2)
-    (at 32 179)
+    (at 40 179)
     (path /57F0F654/57F0FD9F)
     (fp_text reference P302 (at 0 0.1) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3671,7 +3671,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F298D0)
-    (at 39 179)
+    (at 47 179)
     (path /57F0F654/57F0FD9E)
     (fp_text reference P303 (at 0 0.1) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3699,7 +3699,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F298DE)
-    (at 46 179)
+    (at 54 179)
     (path /57F0F654/57F0FD9D)
     (fp_text reference P304 (at 0 0.1) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3727,7 +3727,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F298EC)
-    (at 53 179)
+    (at 61 179)
     (path /57F0F654/57F0FD9C)
     (fp_text reference P305 (at 0 0.1) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3755,7 +3755,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F298FA)
-    (at 60 179)
+    (at 68 179)
     (path /57F0F654/57F0FD9B)
     (fp_text reference P306 (at 0 0.1) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3783,7 +3783,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29908)
-    (at 67 179)
+    (at 75 179)
     (path /57F0F654/57F0FD9A)
     (fp_text reference P307 (at 0 0.1) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3811,7 +3811,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29916)
-    (at 74 179)
+    (at 82 179)
     (path /57F0F654/57F0FD99)
     (fp_text reference P308 (at 0 0.1) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3839,7 +3839,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29924)
-    (at 81 179)
+    (at 89 179)
     (path /57F0F654/57F0FD98)
     (fp_text reference P309 (at 0 0.1) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3867,7 +3867,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29932)
-    (at 88 179)
+    (at 96 179)
     (path /57F0F654/57F0FD97)
     (fp_text reference P310 (at 0 0.1) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4175,7 +4175,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F299CC)
-    (at 86.5 101.5 180)
+    (at 94.5 101.5 180)
     (path /57F0F654/57F0FD91)
     (fp_text reference P321 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4203,7 +4203,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F299DA)
-    (at 79.5 101.5 180)
+    (at 87.5 101.5 180)
     (path /57F0F654/57F0FD90)
     (fp_text reference P322 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4231,7 +4231,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F299E8)
-    (at 72.5 101.5 180)
+    (at 80.5 101.5 180)
     (path /57F0F654/57F0FD8F)
     (fp_text reference P323 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4259,7 +4259,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F299F6)
-    (at 65.5 101.5 180)
+    (at 73.5 101.5 180)
     (path /57F0F654/57F0FD8E)
     (fp_text reference P324 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4287,7 +4287,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29A04)
-    (at 58.5 101.5 180)
+    (at 66.5 101.5 180)
     (path /57F0F654/57F0FD8D)
     (fp_text reference P325 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4315,7 +4315,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29A12)
-    (at 51.5 101.5 180)
+    (at 59.5 101.5 180)
     (path /57F0F654/57F0FDAA)
     (fp_text reference P326 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4343,7 +4343,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29A20)
-    (at 44.5 101.5 180)
+    (at 52.5 101.5 180)
     (path /57F0F654/57F0FDA9)
     (fp_text reference P327 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4371,7 +4371,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29A2E)
-    (at 37.5 101.5 180)
+    (at 45.5 101.5 180)
     (path /57F0F654/57F0FDA8)
     (fp_text reference P328 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4399,7 +4399,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29A3C)
-    (at 30.5 101.5 180)
+    (at 38.5 101.5 180)
     (path /57F0F654/57F0FDA7)
     (fp_text reference P329 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4427,7 +4427,7 @@
   )
 
   (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29A4A)
-    (at 23.5 101.5 180)
+    (at 31.5 101.5 180)
     (path /57F0F654/57F0FDA6)
     (fp_text reference P330 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4455,7 +4455,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29A68)
-    (at 24.85 172)
+    (at 32.85 172)
     (path /57F0F654/57F0FDD3)
     (fp_text reference Q301 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4499,7 +4499,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29A86)
-    (at 33 171)
+    (at 41 171)
     (path /57F0F654/57F0FDD5)
     (fp_text reference Q302 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4543,7 +4543,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29AA4)
-    (at 39.15 170.95)
+    (at 47.15 170.95)
     (path /57F0F654/57F0FDD7)
     (fp_text reference Q303 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4587,7 +4587,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29AC2)
-    (at 46.15 171.05)
+    (at 54.15 171.05)
     (path /57F0F654/57F12D80)
     (fp_text reference Q304 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4631,7 +4631,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29AE0)
-    (at 52 171)
+    (at 60 171)
     (path /57F0F654/57F13027)
     (fp_text reference Q305 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4675,7 +4675,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29AFE)
-    (at 60 172)
+    (at 68 172)
     (path /57F0F654/57F1320D)
     (fp_text reference Q306 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4719,7 +4719,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29B1C)
-    (at 67.15 171.05)
+    (at 75.15 171.05)
     (path /57F0F654/57F13873)
     (fp_text reference Q307 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4763,7 +4763,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29B3A)
-    (at 74 171)
+    (at 82 171)
     (path /57F0F654/57F13B6D)
     (fp_text reference Q308 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4807,7 +4807,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29B58)
-    (at 81.15 171.05)
+    (at 89.15 171.05)
     (path /57F0F654/57F13E84)
     (fp_text reference Q309 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4851,7 +4851,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29B76)
-    (at 87 171)
+    (at 95 171)
     (path /57F0F654/57F14077)
     (fp_text reference Q310 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -5335,7 +5335,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29CC0)
-    (at 87 109)
+    (at 95 109)
     (path /57F0F654/57F183D2)
     (fp_text reference Q321 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -5379,7 +5379,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29CDE)
-    (at 80 109)
+    (at 88 109)
     (path /57F0F654/57F183E2)
     (fp_text reference Q322 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -5423,7 +5423,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29CFC)
-    (at 73 109)
+    (at 81 109)
     (path /57F0F654/57F183F2)
     (fp_text reference Q323 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -5467,7 +5467,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29D1A)
-    (at 65 108)
+    (at 73 108)
     (path /57F0F654/57F18402)
     (fp_text reference Q324 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -5511,7 +5511,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29D38)
-    (at 58 109)
+    (at 66 109)
     (path /57F0F654/57F18412)
     (fp_text reference Q325 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -5555,7 +5555,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29D56)
-    (at 52 109)
+    (at 60 109)
     (path /57F0F654/57F18422)
     (fp_text reference Q326 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -5599,7 +5599,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29D74)
-    (at 44.85 109)
+    (at 52.85 109)
     (path /57F0F654/57F18432)
     (fp_text reference Q327 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -5643,7 +5643,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29D92)
-    (at 38.15 109.95)
+    (at 46.15 109.95)
     (path /57F0F654/57F18442)
     (fp_text reference Q328 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -5687,7 +5687,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29DB0)
-    (at 31 109)
+    (at 39 109)
     (path /57F0F654/57F18452)
     (fp_text reference Q329 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -5731,7 +5731,7 @@
   )
 
   (module agg:SOT-23 (layer F.Cu) (tedit 5765688A) (tstamp 57F29DCE)
-    (at 25 109)
+    (at 33 109)
     (path /57F0F654/57F18462)
     (fp_text reference Q330 (at 0 -2.45) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -7963,6 +7963,106 @@
       (scale (xyz 0.4 0.4 0.4))
       (rotate (xyz -90 0 180))
     )
+  )
+
+  (module agg:M3_MOUNT (layer F.Cu) (tedit 5681D0FF) (tstamp 57F462BD)
+    (at 25 95)
+    (path /57F4698F)
+    (fp_text reference X101 (at 0 -4.1) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value PART (at 0 4.1) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start -3.4 3.4) (end -3.4 -3.4) (layer F.CrtYd) (width 0.01))
+    (fp_line (start 3.4 3.4) (end -3.4 3.4) (layer F.CrtYd) (width 0.01))
+    (fp_line (start 3.4 -3.4) (end 3.4 3.4) (layer F.CrtYd) (width 0.01))
+    (fp_line (start -3.4 -3.4) (end 3.4 -3.4) (layer F.CrtYd) (width 0.01))
+    (pad "" np_thru_hole circle (at 0 0) (size 3.3 3.3) (drill 3.3) (layers *.Cu *.Mask F.SilkS)
+      (solder_mask_margin 1.5) (clearance 1.65))
+    (pad "" np_thru_hole circle (at 0 -2.5) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 2.5 0) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 0 2.5) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at -2.5 0) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at -1.8 -1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 1.8 -1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at -1.8 1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 1.8 1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+  )
+
+  (module agg:M3_MOUNT (layer F.Cu) (tedit 5681D0FF) (tstamp 57F462CE)
+    (at 115 95)
+    (path /57F45CC2)
+    (fp_text reference X102 (at 0 -4.1) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value PART (at 0 4.1) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start -3.4 3.4) (end -3.4 -3.4) (layer F.CrtYd) (width 0.01))
+    (fp_line (start 3.4 3.4) (end -3.4 3.4) (layer F.CrtYd) (width 0.01))
+    (fp_line (start 3.4 -3.4) (end 3.4 3.4) (layer F.CrtYd) (width 0.01))
+    (fp_line (start -3.4 -3.4) (end 3.4 -3.4) (layer F.CrtYd) (width 0.01))
+    (pad "" np_thru_hole circle (at 0 0) (size 3.3 3.3) (drill 3.3) (layers *.Cu *.Mask F.SilkS)
+      (solder_mask_margin 1.5) (clearance 1.65))
+    (pad "" np_thru_hole circle (at 0 -2.5) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 2.5 0) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 0 2.5) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at -2.5 0) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at -1.8 -1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 1.8 -1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at -1.8 1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 1.8 1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+  )
+
+  (module agg:M3_MOUNT (layer F.Cu) (tedit 5681D0FF) (tstamp 57F462DF)
+    (at 115 185)
+    (path /57F46B79)
+    (fp_text reference X103 (at 0 -4.1) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value PART (at 0 4.1) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start -3.4 3.4) (end -3.4 -3.4) (layer F.CrtYd) (width 0.01))
+    (fp_line (start 3.4 3.4) (end -3.4 3.4) (layer F.CrtYd) (width 0.01))
+    (fp_line (start 3.4 -3.4) (end 3.4 3.4) (layer F.CrtYd) (width 0.01))
+    (fp_line (start -3.4 -3.4) (end 3.4 -3.4) (layer F.CrtYd) (width 0.01))
+    (pad "" np_thru_hole circle (at 0 0) (size 3.3 3.3) (drill 3.3) (layers *.Cu *.Mask F.SilkS)
+      (solder_mask_margin 1.5) (clearance 1.65))
+    (pad "" np_thru_hole circle (at 0 -2.5) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 2.5 0) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 0 2.5) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at -2.5 0) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at -1.8 -1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 1.8 -1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at -1.8 1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 1.8 1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+  )
+
+  (module agg:M3_MOUNT (layer F.Cu) (tedit 5681D0FF) (tstamp 57F462F0)
+    (at 25 185)
+    (path /57F467C6)
+    (fp_text reference X104 (at 0 -4.1) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value PART (at 0 4.1) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start -3.4 3.4) (end -3.4 -3.4) (layer F.CrtYd) (width 0.01))
+    (fp_line (start 3.4 3.4) (end -3.4 3.4) (layer F.CrtYd) (width 0.01))
+    (fp_line (start 3.4 -3.4) (end 3.4 3.4) (layer F.CrtYd) (width 0.01))
+    (fp_line (start -3.4 -3.4) (end 3.4 -3.4) (layer F.CrtYd) (width 0.01))
+    (pad "" np_thru_hole circle (at 0 0) (size 3.3 3.3) (drill 3.3) (layers *.Cu *.Mask F.SilkS)
+      (solder_mask_margin 1.5) (clearance 1.65))
+    (pad "" np_thru_hole circle (at 0 -2.5) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 2.5 0) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 0 2.5) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at -2.5 0) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at -1.8 -1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 1.8 -1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at -1.8 1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
+    (pad "" np_thru_hole circle (at 1.8 1.8) (size 0.6 0.6) (drill 0.6) (layers *.Cu *.Mask F.SilkS))
   )
 
   (gr_line (start 120 90) (end 120 190) (angle 90) (layer Edge.Cuts) (width 0.1))
