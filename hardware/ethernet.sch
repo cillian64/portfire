@@ -718,17 +718,6 @@ Connection ~ 2550 2950
 Wire Wire Line
 	2150 2900 2150 2950
 Connection ~ 2350 2950
-$Comp
-L GND #PWR058
-U 1 1 57F04B92
-P 2450 3300
-F 0 "#PWR058" H 2450 3050 50  0001 C CNN
-F 1 "GND" H 2450 3150 50  0000 C CNN
-F 2 "" H 2450 3300 50  0000 C CNN
-F 3 "" H 2450 3300 50  0000 C CNN
-	1    2450 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3450 1450 4250 1450
 Wire Wire Line
@@ -1483,7 +1472,6 @@ $EndComp
 Wire Wire Line
 	10350 4550 10350 4600
 Connection ~ 10350 4600
-NoConn ~ 1200 2150
 Connection ~ 5800 1000
 Connection ~ 5000 900 
 Wire Wire Line
@@ -1518,4 +1506,10 @@ F 3 "" H 5800 1300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5800 1300
+Wire Wire Line
+	1200 2150 1200 3300
+Wire Wire Line
+	1200 3300 2450 3300
+Text Notes 1350 3300 0    60   ~ 0
+Chassis Ground
 $EndSCHEMATC
