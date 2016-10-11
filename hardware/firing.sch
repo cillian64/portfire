@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:749010012a
 LIBS:agg-kicad
 LIBS:portfire-cache
 EELAYER 25 0

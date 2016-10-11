@@ -1,4 +1,4 @@
-update=Tuesday, 04 October 2016 'pmt' 21:08:00
+update=Tuesday, 11 October 2016 'pmt' 23:34:38
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../hardware
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,4 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=agg-kicad/agg-kicad
+LibName30=749010012a
+LibName31=agg-kicad/agg-kicad
