@@ -1604,4 +1604,10 @@ F 4 "2525074" H 1450 4150 60  0001 C CNN "Farnell"
 	1    1450 4150
 	1    0    0    -1  
 $EndComp
+Text Label 3700 4150 0    60   ~ 0
+STATUS
+Text Label 3700 4250 0    60   ~ 0
+ERROR
+Text Label 9350 1650 2    60   ~ 0
+LINK
 $EndSCHEMATC
