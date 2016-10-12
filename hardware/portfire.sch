@@ -46,18 +46,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L STM32F4xxVxTx IC101
-U 1 1 57E9C730
-P 2900 4550
-F 0 "IC101" H 2450 7650 50  0000 L CNN
-F 1 "STM32F407VGT6TR" H 2450 1450 50  0000 L CNN
-F 2 "agg:LQFP-100" H 2450 1350 50  0001 L CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 2450 1250 50  0001 L CNN
-F 4 "2333297" H 2450 1150 50  0001 L CNN "Farnell"
-	1    2900 4550
-	1    0    0    -1  
-$EndComp
-$Comp
 L 25AA02E48 IC103
 U 1 1 57E9CE5E
 P 7850 5600
@@ -989,7 +977,7 @@ F 4 "1830734" H 7050 2350 60  0001 C CNN "Farnell"
 	1    7050 2350
 	1    0    0    -1  
 $EndComp
-Text Label 4300 3100 0    60   ~ 0
+Text Label 2300 4350 2    60   ~ 0
 AUX_BUS_RX
 $Comp
 L TPS62152 IC102
@@ -1646,4 +1634,137 @@ Wire Wire Line
 	10700 2850 10550 2850
 Text Label 3500 6150 0    60   ~ 0
 TRAFFIC
+Text Label 2300 6950 2    60   ~ 0
+CH1
+Text Label 3500 6750 0    60   ~ 0
+CH2
+Text Label 3500 6650 0    60   ~ 0
+CH3
+Text Label 3500 6550 0    60   ~ 0
+CH4
+Text Label 3500 6450 0    60   ~ 0
+CH5
+Text Label 3500 6350 0    60   ~ 0
+CH6
+Text Label 9750 2750 2    60   ~ 0
+CH1
+Text Label 9750 2850 2    60   ~ 0
+CH2
+Text Label 9750 2950 2    60   ~ 0
+CH3
+Text Label 9750 3050 2    60   ~ 0
+CH4
+Text Label 9750 3150 2    60   ~ 0
+CH5
+Text Label 9750 3250 2    60   ~ 0
+CH6
+Text Label 3500 6250 0    60   ~ 0
+CH7
+Text Label 9750 3350 2    60   ~ 0
+CH7
+Text Label 2300 7350 2    60   ~ 0
+CH8
+Text Label 2300 7450 2    60   ~ 0
+CH9
+Text Label 9750 3450 2    60   ~ 0
+CH8
+Text Label 9750 3550 2    60   ~ 0
+CH9
+Text Label 3500 4250 0    60   ~ 0
+CH10
+Text Label 3500 4350 0    60   ~ 0
+CH11
+Text Label 3500 4550 0    60   ~ 0
+CH12
+Text Label 3500 4650 0    60   ~ 0
+CH13
+Text Label 3500 4750 0    60   ~ 0
+CH14
+Text Label 3500 4850 0    60   ~ 0
+CH15
+Text Label 9750 4150 2    60   ~ 0
+CH15
+Text Label 9750 4050 2    60   ~ 0
+CH14
+Text Label 9750 3950 2    60   ~ 0
+CH13
+Text Label 9750 3850 2    60   ~ 0
+CH12
+Text Label 9750 3750 2    60   ~ 0
+CH11
+Text Label 9750 3650 2    60   ~ 0
+CH10
+NoConn ~ 3500 4450
+Text Label 3500 2150 0    60   ~ 0
+CH16
+Text Label 3500 2250 0    60   ~ 0
+CH17
+Text Label 9750 4250 2    60   ~ 0
+CH16
+Text Label 9750 4350 2    60   ~ 0
+CH17
+Text Label 9750 4450 2    60   ~ 0
+CH18
+Text Label 3500 2450 0    60   ~ 0
+CH18
+Text Label 2300 4950 2    60   ~ 0
+CH19
+Text Label 9750 4550 2    60   ~ 0
+CH19
+Text Label 9750 4650 2    60   ~ 0
+CH20
+Text Label 9750 4750 2    60   ~ 0
+CH21
+Text Label 9750 4850 2    60   ~ 0
+CH22
+Text Label 9750 4950 2    60   ~ 0
+CH23
+Text Label 9750 5050 2    60   ~ 0
+CH24
+Text Label 9750 5150 2    60   ~ 0
+CH25
+Text Label 9750 5250 2    60   ~ 0
+CH26
+Text Label 9750 5350 2    60   ~ 0
+CH27
+Text Label 9750 5450 2    60   ~ 0
+CH28
+Text Label 9750 5550 2    60   ~ 0
+CH29
+Text Label 9750 5650 2    60   ~ 0
+CH30
+Text Label 2300 5050 2    60   ~ 0
+CH20
+Text Label 2300 5150 2    60   ~ 0
+CH21
+$Comp
+L STM32F4xxVxTx IC101
+U 1 1 57E9C730
+P 2900 4550
+F 0 "IC101" H 2450 7650 50  0000 L CNN
+F 1 "STM32F407VGT6TR" H 2450 1450 50  0000 L CNN
+F 2 "agg:LQFP-100" H 2450 1350 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 2450 1250 50  0001 L CNN
+F 4 "2333297" H 2450 1150 50  0001 L CNN "Farnell"
+	1    2900 4550
+	1    0    0    -1  
+$EndComp
+Text Label 2300 6750 2    60   ~ 0
+CH30
+Text Label 2300 6850 2    60   ~ 0
+CH29
+Text Label 3500 5150 0    60   ~ 0
+CH28
+Text Label 3500 5250 0    60   ~ 0
+CH27
+Text Label 2300 6550 2    60   ~ 0
+CH26
+Text Label 2300 6450 2    60   ~ 0
+CH25
+Text Label 2300 6350 2    60   ~ 0
+CH24
+Text Label 2300 6250 2    60   ~ 0
+CH23
+Text Label 2300 6150 2    60   ~ 0
+CH22
 $EndSCHEMATC
