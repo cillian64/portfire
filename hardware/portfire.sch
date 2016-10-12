@@ -1061,13 +1061,13 @@ Text Label 8150 5600 0    60   ~ 0
 ROM_MISO
 Text Label 8150 5700 0    60   ~ 0
 ROM_MOSI
-Text Label 3700 3400 0    60   ~ 0
+Text Label 2300 5650 2    60   ~ 0
 ROM_CS
-Text Label 3700 3500 0    60   ~ 0
+Text Label 3500 2650 0    60   ~ 0
 ROM_SCK
-Text Label 3700 3600 0    60   ~ 0
+Text Label 3500 2750 0    60   ~ 0
 ROM_MISO
-Text Label 3700 3700 0    60   ~ 0
+Text Label 3500 2850 0    60   ~ 0
 ROM_MOSI
 $Comp
 L C C121
