@@ -36,12 +36,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
-Title ""
-Date ""
-Rev ""
+Title "Portfire"
+Date "2016-10-13"
+Rev "1"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "Drawn by: DWT"
+Comment2 "Checked by:"
 Comment3 ""
 Comment4 ""
 $EndDescr
