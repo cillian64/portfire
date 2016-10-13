@@ -5,7 +5,7 @@
     (no_connects 3)
     (area 42.559999 43.549999 142.760001 143.750001)
     (thickness 1.6)
-    (drawings 18)
+    (drawings 28)
     (tracks 2071)
     (zones 0)
     (modules 200)
@@ -68,7 +68,7 @@
     (pad_drill 0.889)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
-    (visible_elements FFFCFF7F)
+    (visible_elements FFFEFF7F)
     (pcbplotparams
       (layerselection 0x00030_80000001)
       (usegerberextensions false)
@@ -4284,13 +4284,13 @@
     )
   )
 
-  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F299CC)
+  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57FF8C76) (tstamp 57F299CC)
     (at 117.16 55.15 180)
     (path /57F0F654/57F0FD91)
     (fp_text reference P321 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 21 (at -0.2 8.8 180) (layer F.SilkS)
+    (fp_text value 21 (at -0.2 8.8 180) (layer F.SilkS) hide
       (effects (font (size 2 2) (thickness 0.3)))
     )
     (fp_circle (center 1.25 4.8) (end 0.6 4.8) (layer F.Fab) (width 0.15))
@@ -4312,13 +4312,13 @@
     )
   )
 
-  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F299DA)
+  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57FF8CA2) (tstamp 57F299DA)
     (at 110.16 55.15 180)
     (path /57F0F654/57F0FD90)
     (fp_text reference P322 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 22 (at -0.2 8.8 180) (layer F.SilkS)
+    (fp_text value 22 (at -0.2 8.8 180) (layer F.SilkS) hide
       (effects (font (size 2 2) (thickness 0.3)))
     )
     (fp_circle (center 1.25 4.8) (end 0.6 4.8) (layer F.Fab) (width 0.15))
@@ -4340,13 +4340,13 @@
     )
   )
 
-  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F299E8)
+  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57FF8C73) (tstamp 57F299E8)
     (at 103.16 55.15 180)
     (path /57F0F654/57F0FD8F)
     (fp_text reference P323 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 23 (at -0.2 8.8 180) (layer F.SilkS)
+    (fp_text value 23 (at -0.2 8.8 180) (layer F.SilkS) hide
       (effects (font (size 2 2) (thickness 0.3)))
     )
     (fp_circle (center 1.25 4.8) (end 0.6 4.8) (layer F.Fab) (width 0.15))
@@ -4368,13 +4368,13 @@
     )
   )
 
-  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F299F6)
+  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57FF8C9F) (tstamp 57F299F6)
     (at 96.16 55.15 180)
     (path /57F0F654/57F0FD8E)
     (fp_text reference P324 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 24 (at -0.2 8.8 180) (layer F.SilkS)
+    (fp_text value 24 (at -0.2 8.8 180) (layer F.SilkS) hide
       (effects (font (size 2 2) (thickness 0.3)))
     )
     (fp_circle (center 1.25 4.8) (end 0.6 4.8) (layer F.Fab) (width 0.15))
@@ -4396,13 +4396,13 @@
     )
   )
 
-  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29A04)
+  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57FF8C70) (tstamp 57F29A04)
     (at 89.16 55.15 180)
     (path /57F0F654/57F0FD8D)
     (fp_text reference P325 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 25 (at -0.2 8.8 180) (layer F.SilkS)
+    (fp_text value 25 (at -0.2 8.8 180) (layer F.SilkS) hide
       (effects (font (size 2 2) (thickness 0.3)))
     )
     (fp_circle (center 1.25 4.8) (end 0.6 4.8) (layer F.Fab) (width 0.15))
@@ -4424,13 +4424,13 @@
     )
   )
 
-  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29A12)
+  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57FF8C9C) (tstamp 57F29A12)
     (at 82.16 55.15 180)
     (path /57F0F654/57F0FDAA)
     (fp_text reference P326 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 26 (at -0.2 8.8 180) (layer F.SilkS)
+    (fp_text value 26 (at -0.2 8.8 180) (layer F.SilkS) hide
       (effects (font (size 2 2) (thickness 0.3)))
     )
     (fp_circle (center 1.25 4.8) (end 0.6 4.8) (layer F.Fab) (width 0.15))
@@ -4452,13 +4452,13 @@
     )
   )
 
-  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29A20)
+  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57FF8C6D) (tstamp 57F29A20)
     (at 75.16 55.15 180)
     (path /57F0F654/57F0FDA9)
     (fp_text reference P327 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 27 (at -0.2 8.8 180) (layer F.SilkS)
+    (fp_text value 27 (at -0.2 8.8 180) (layer F.SilkS) hide
       (effects (font (size 2 2) (thickness 0.3)))
     )
     (fp_circle (center 1.25 4.8) (end 0.6 4.8) (layer F.Fab) (width 0.15))
@@ -4480,13 +4480,13 @@
     )
   )
 
-  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29A2E)
+  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57FF8C4D) (tstamp 57F29A2E)
     (at 68.16 55.15 180)
     (path /57F0F654/57F0FDA8)
     (fp_text reference P328 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 28 (at -0.2 8.8 180) (layer F.SilkS)
+    (fp_text value 28 (at -0.2 8.8 180) (layer F.SilkS) hide
       (effects (font (size 2 2) (thickness 0.3)))
     )
     (fp_circle (center 1.25 4.8) (end 0.6 4.8) (layer F.Fab) (width 0.15))
@@ -4508,13 +4508,13 @@
     )
   )
 
-  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29A3C)
+  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57FF8C4A) (tstamp 57F29A3C)
     (at 61.16 55.15 180)
     (path /57F0F654/57F0FDA7)
     (fp_text reference P329 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 29 (at -0.2 8.8 180) (layer F.SilkS)
+    (fp_text value 29 (at -0.2 8.8 180) (layer F.SilkS) hide
       (effects (font (size 2 2) (thickness 0.3)))
     )
     (fp_circle (center 1.25 4.8) (end 0.6 4.8) (layer F.Fab) (width 0.15))
@@ -4536,13 +4536,13 @@
     )
   )
 
-  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57E155B1) (tstamp 57F29A4A)
+  (module hardware:PTSA0,52-2,5-z (layer F.Cu) (tedit 57FF8C47) (tstamp 57F29A4A)
     (at 54.16 55.15 180)
     (path /57F0F654/57F0FDA6)
     (fp_text reference P330 (at 0 0.1 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 30 (at -0.2 8.8 180) (layer F.SilkS)
+    (fp_text value 30 (at -0.2 8.8 180) (layer F.SilkS) hide
       (effects (font (size 2 2) (thickness 0.3)))
     )
     (fp_circle (center 1.25 4.8) (end 0.6 4.8) (layer F.Fab) (width 0.15))
@@ -4558,7 +4558,7 @@
     (pad 2 thru_hole circle (at 1.125 2.5 180) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 86 "Net-(P330-Pad2)"))
     (model PTSA0,52-2,5-z.wrl
-      (at (xyz -0.7539370078740157 -0.3622047244094488 -0.7125984251968505))
+      (at (xyz -0.753937 -0.362205 -0.712598))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz -90 0 -90))
     )
@@ -8361,6 +8361,36 @@
     )
   )
 
+  (gr_text 22 (at 110.593328 45.76 180) (layer F.SilkS) (tstamp 57FF8CED)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
+  (gr_text 24 (at 96.579996 45.76 180) (layer F.SilkS) (tstamp 57FF8CEA)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
+  (gr_text 26 (at 82.566664 45.76 180) (layer F.SilkS) (tstamp 57FF8CE7)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
+  (gr_text 21 (at 117.599994 45.76 180) (layer F.SilkS) (tstamp 57FF8CBA)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
+  (gr_text 23 (at 103.586662 45.76 180) (layer F.SilkS) (tstamp 57FF8CB7)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
+  (gr_text 25 (at 89.57333 45.76 180) (layer F.SilkS) (tstamp 57FF8CB4)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
+  (gr_text 27 (at 75.559998 45.76 180) (layer F.SilkS) (tstamp 57FF8CB1)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
+  (gr_text 28 (at 68.553332 45.76 180) (layer F.SilkS) (tstamp 57FF8C76)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
+  (gr_text 29 (at 61.546666 45.76 180) (layer F.SilkS) (tstamp 57FF8C73)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
+  (gr_text 30 (at 54.54 45.76 180) (layer F.SilkS)
+    (effects (font (size 2 2) (thickness 0.3)))
+  )
   (gr_text TRAFFIC (at 104.68 107.73 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
