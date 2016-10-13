@@ -1,0 +1,10 @@
+(module hardware:jump_NC (layer F.Cu) (tedit 57FF96CD)
+  (fp_text reference JP201 (at 0 2.9) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value Jumper_NC_Small (at -0.3 -2.6) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole circle (at -1.2 0) (size 1.2 1.2) (drill 0.8) (layers *.Cu *.Mask))
+  (pad 2 thru_hole circle (at 1.2 0) (size 1.2 1.2) (drill 0.8) (layers *.Cu *.Mask))
+)
