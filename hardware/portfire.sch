@@ -777,7 +777,7 @@ F 0 "IC104" H 6050 1100 50  0000 L CNN
 F 1 "ADP3335" H 6050 600 50  0000 L CNN
 F 2 "agg:MSOP-8" H 6050 500 50  0001 L CNN
 F 3 "http://www.farnell.com/datasheets/2146734.pdf" H 6650 500 50  0001 C CNN
-F 4 "2067775" H 6050 400 50  0001 L CNN "Farnell"
+F 4 "2074873" H 6050 400 50  0001 L CNN "Farnell"
 	1    6250 900 
 	1    0    0    -1  
 $EndComp
