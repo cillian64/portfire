@@ -1,0 +1,67 @@
+name: Portfire
+lsefreq: 0
+hsefreq: 26000000
+voltage: 3.3
+mcutype: STM32F407xx
+default: input, pushpull, starthigh, pullup, highspeed
+pins:
+    SWDIO: pa13, af0, pulldown
+    SWCLK: pa14, af0, pulldown
+
+    RMII_REF_CLK: pa1, af11
+    RMII_MDIO: pa2, af11
+    RMII_CRS_DV: pa7, af11
+    RMII_TX_EN: pb11, af11
+    RMII_TXD0: pb12, af11
+    RMII_TXD1: pb13, af11
+    RMII_MDC: pc1, af11
+    RMII_RXD0: pc4, af11
+    RMII_RXD1: pc5, af11
+
+    ROM_CS: pa15, output
+    ROM_SCK: pc10, af6
+    ROM_MISO: pc11, af6
+    ROM_MOSI: pc12, af6
+
+    AUX_BUS_RX: pa3, af7
+
+    ARM: pb0, output, startlow
+    CONT: pb1, floating
+    CONT_EN: pb2, output, startlow
+
+    STATUS: pe7, output, startlow
+    ERROR: pe8, output, startlow
+    TRAFFIC: pe9, output, startlow
+
+    CH1: pb10, output, startlow
+    CH2: pe15, output, startlow
+    CH3: pe14, output, startlow
+    CH4: pe13, output, startlow
+    CH5: pe12, output, startlow
+    CH6: pe11, output, startlow
+    CH7: pe14, output, startlow
+    CH8: pb14, output, startlow
+    CH9: pb15, output, startlow
+    CH10: pd8, output, startlow
+
+    CH11: pd9, output, startlow
+    CH12: pd11, output, startlow
+    CH13: pd12, output, startlow
+    CH14: pd13, output, startlow
+    CH15: pd14, output, startlow
+    CH16: pc6, output, startlow
+    CH17: pc7, output, startlow
+    CH18: pc8, output, startlow
+    CH19: pa8, output, startlow
+    CH20: pa9, output, startlow
+
+    CH21: pa10, output, startlow
+    CH22: pa10, output, startlow
+    CH23: pa10, output, startlow
+    CH24: pa10, output, startlow
+    CH25: pa10, output, startlow
+    CH26: pa10, output, startlow
+    CH27: pa10, output, startlow
+    CH28: pa10, output, startlow
+    CH29: pa10, output, startlow
+    CH30: pa10, output, startlow
