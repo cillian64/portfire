@@ -145,7 +145,7 @@
  *      memp_malloc() or memp_free() is called (useful but slow!)
  */
 #ifndef MEMP_OVERFLOW_CHECK
-#define MEMP_OVERFLOW_CHECK             0
+#define MEMP_OVERFLOW_CHECK             1
 #endif
 
 /**
@@ -153,7 +153,7 @@
  * sure that there are no cycles in the linked lists.
  */
 #ifndef MEMP_SANITY_CHECK
-#define MEMP_SANITY_CHECK               0
+#define MEMP_SANITY_CHECK               1
 #endif
 
 /**
@@ -635,7 +635,7 @@
  * LWIP_BROADCAST_PING==1: respond to broadcast pings (default is unicast only)
  */
 #ifndef LWIP_BROADCAST_PING
-#define LWIP_BROADCAST_PING             0
+#define LWIP_BROADCAST_PING             1
 #endif
 
 /**
@@ -674,6 +674,10 @@
  */
 #ifndef LWIP_DHCP
 #define LWIP_DHCP                       0
+#endif
+
+#ifndef LWIP_DHCP_BOOTP_FILE
+#define LWIP_DHCP_BOOTP_FILE            0
 #endif
 
 /**
@@ -899,7 +903,7 @@
  * LWIP_TCP==1: Turn on TCP.
  */
 #ifndef LWIP_TCP
-#define LWIP_TCP                        1
+#define LWIP_TCP                        0
 #endif
 
 /**

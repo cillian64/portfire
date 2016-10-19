@@ -26,6 +26,12 @@
 
 #include "lwipthread.h"
 
+#include "lwip/opt.h"
+#include "lwip/arch.h"
+#include "lwip/api.h"
+
+#include "rom.h"
+
 
 /*===========================================================================*/
 /* Main and generic code.                                                    */
@@ -34,8 +40,8 @@
 /*
  * Green LED blinker thread, times are in milliseconds.
  */
-static THD_WORKING_AREA(waThread1, 128);
-static THD_FUNCTION(Thread1, arg) {
+static THD_WORKING_AREA(blinker_thd_wa, 128);
+static THD_FUNCTION(blinker_thd, arg) {
     (void)arg;
     chRegSetThreadName("blinker");
     while (true) {
@@ -48,22 +54,32 @@ static THD_FUNCTION(Thread1, arg) {
  * Application entry point.
  */
 int main(void) {
-    /*
-     * System initializations.
-     * - HAL initialization, this also initializes the configured device drivers
-     *   and performs the board-specific initializations.
-     * - Kernel initialization, the main() function becomes a thread and the
-     *   RTOS is active.
-     * - lwIP subsystem initialization using the default configuration.
-     */
+    /* Set up our IP details */
+    uint8_t mac_addr[6];
+    struct ip_addr address, netmask, gateway;
+    IP4_ADDR(&address, 192, 168, 0, 10);
+    IP4_ADDR(&netmask, 255, 255, 255, 0);
+    IP4_ADDR(&gateway, 192, 168, 0, 1);
+    lwipthread_opts_t lwipopts = {
+        .macaddress = mac_addr,
+        .address = address.addr,
+        .netmask = netmask.addr,
+        .gateway = gateway.addr,
+    };
+
+    /* Initialise ChibiOS */
     halInit();
     chSysInit();
-    lwipInit(NULL);
 
-    /*
-     * Creates the blinker thread.
-     */
-    chThdCreateStatic(waThread1, sizeof(waThread1), NORMALPRIO, Thread1, NULL);
+    /* Start blinker thread */
+    chThdCreateStatic(blinker_thd_wa, sizeof(blinker_thd_wa),
+                      NORMALPRIO, blinker_thd, NULL);
+
+    /* Read our MAC address from the EEPROM */
+    rom_get_eui48(mac_addr);
+
+    /* Initialise lwIP using the new MAC address */
+    lwipInit(&lwipopts);
 
     while(true) {
         chThdSleepMilliseconds(1000);
