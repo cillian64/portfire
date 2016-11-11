@@ -28,14 +28,14 @@ for ch in range(30):
 
 print("Bus voltage...")
 v = struct.unpack("<H", txrx(b'b'))[0]
-print("{:03}V".format(v/1000))
+print("{:.03}V".format(v/1000))
 
 print("Arming...", end='', flush=True)
 print(txrx(b'a').decode().strip())
 
 print("Bus voltage...")
 v = struct.unpack("<H", txrx(b'b'))[0]
-print("{:03}V".format(v/1000))
+print("{:.03}V".format(v/1000))
 
 if args.fire:
     channels = [int(x) for x in args.fire.split(",")]
@@ -49,4 +49,4 @@ print(txrx(b'd').decode().strip())
 
 print("Bus voltage...")
 v = struct.unpack("<H", txrx(b'b'))[0]
-print("{:03}V".format(v/1000))
+print("{:.03}V".format(v/1000))
