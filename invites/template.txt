@@ -1,0 +1,56 @@
+***************************************
+* * * * * Welcome to I.R.I.S. * * * * *
+* Intelligent Remote Ignition System  *
+*  Copyright (c) 1994 Iris Labs Ltd.  *
+***************************************
+
+
+Boot sequence initiated.
+Power supply status:
+48V...........OK
+6V............OK
+5V............OK
+3.3V..........OK
+FIRING BUS....OK
+
+
+CMOS Checksum Error: Defaults loaded.
+System time: 1970-01-01 00:00:02
+
+
+Establishing network link...
+ATM module...ERROR
+IPX module...ERROR
+IPv4 module...OK
+
+
+Reading Configuration EEPROM...
+
+
+Event loaded:
+** Event Start Date: 2016-11-19
+** Event Start Time: 19:30 GMT
+** Event Location: XX.XXXXX NORTH, XX.XXXXX EAST
+Geocoding event location...
+** Event Location: XXXXXXXXXXXXXX
+** Event Catering: BYO
+
+
+Firing Sequence loaded:
+** Firework channels configured: 90
+** Net Explosive Content: 3422.4g
+
+
+Participant list loaded:
++-----------+-------------------------------+-----------+
+| NAME      | E-MAIL                        | ATTENDING |
++-----------+-------------------------------+-----------+
+| ADAM      | XXXXXXXXXXXXXXXXXX            | CONFIRMED |
+| DAVID     | XXXXXXXXXXXXXXXXXX            | CONFIRMED |
+| {name: <9} | {email: <29} | PENDING   |
+| CRC Failure!ERROR     | ERROR                         | ERROR     |
+| ERROR     | ERROR                         | ERROR     |
+Error reading participant list.
+EEPROM corruption detected.
+Emailing debug log to participants...
+Core dumped.
