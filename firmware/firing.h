@@ -10,14 +10,14 @@ void firing_arm(void);
 void firing_disarm(void);
 bool firing_armed(void);
 
-/* Set up to four channels to fire.
+/* Set up to three channels to fire.
  *
  * Will fire for a fixed duration; if you call firing_fire again
  * before this expires then it will block until the initial firing is complete.
  *
- * Set parameters to NULL to fire fewer than four channels.
+ * Set parameters to 0 to fire fewer than three channels.
  */
-void firing_fire(uint8_t ch_a, uint8_t ch_b, uint8_t ch_c, uint8_t ch_d);
+void firing_fire(uint8_t ch_a, uint8_t ch_b, uint8_t ch_c);
 
 /* Reports continuity on all channels.
  *

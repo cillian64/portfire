@@ -31,6 +31,7 @@
 #include "lwip/api.h"
 
 #include "rom.h"
+#include "firing.h"
 
 
 /*===========================================================================*/
@@ -50,6 +51,8 @@ static THD_FUNCTION(blinker_thd, arg) {
     }
 }
 
+uint8_t channels[30] = {0};
+
 /*
  * Application entry point.
  */
@@ -57,9 +60,9 @@ int main(void) {
     /* Set up our IP details */
     uint8_t mac_addr[6];
     struct ip_addr address, netmask, gateway;
-    IP4_ADDR(&address, 192, 168, 0, 10);
+    IP4_ADDR(&address, 192, 168, 2, 250);
     IP4_ADDR(&netmask, 255, 255, 255, 0);
-    IP4_ADDR(&gateway, 192, 168, 0, 1);
+    IP4_ADDR(&gateway, 192, 168, 2, 1);
     lwipthread_opts_t lwipopts = {
         .macaddress = mac_addr,
         .address = address.addr,
@@ -81,7 +84,15 @@ int main(void) {
     /* Initialise lwIP using the new MAC address */
     lwipInit(&lwipopts);
 
+    palSetLine(LINE_TRAFFIC);
+    chThdSleepMilliseconds(1000);
+    palClearLine(LINE_TRAFFIC);
+    palSetLine(LINE_ERROR);
+
+    firing_disarm();
+
     while(true) {
+        firing_cont(channels);
         chThdSleepMilliseconds(1000);
     }
 }

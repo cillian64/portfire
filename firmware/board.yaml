@@ -26,7 +26,7 @@ pins:
     AUX_BUS_RX: pa3, af7
 
     ARM: pb0, output, startlow
-    CONT: pb1, floating
+    CONT: pb1, analog, floating
     CONT_EN: pb2, output, startlow
 
     STATUS: pe7, output, startlow
@@ -56,12 +56,12 @@ pins:
     CH20: pa9, output, startlow
 
     CH21: pa10, output, startlow
-    CH22: pa10, output, startlow
-    CH23: pa10, output, startlow
-    CH24: pa10, output, startlow
-    CH25: pa10, output, startlow
-    CH26: pa10, output, startlow
-    CH27: pa10, output, startlow
-    CH28: pa10, output, startlow
-    CH29: pa10, output, startlow
-    CH30: pa10, output, startlow
+    CH22: pb3, output, startlow
+    CH23: pb4, output, startlow
+    CH24: pb5, output, startlow
+    CH25: pb6, output, startlow
+    CH26: pb7, output, startlow
+    CH27: pe1, output, startlow
+    CH28: pe0, output, startlow
+    CH29: pb9, output, startlow
+    CH30: pb8, output, startlow

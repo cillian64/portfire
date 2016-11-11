@@ -5,7 +5,7 @@
 
 # Compiler options here.
 ifeq ($(USE_OPT),)
-  USE_OPT = -O2 -ggdb -fomit-frame-pointer -falign-functions=16
+  USE_OPT = -O0 -ggdb -fomit-frame-pointer -falign-functions=16
 endif
 
 # C specific options here (added to USE_OPT).
@@ -237,14 +237,14 @@ flash: build/$(PROJECT).elf $(OUTFILES)
 	arm-none-eabi-gdb --batch \
 		              -ex 'target extended-remote $(BMP_PORT)' \
 					  -ex 'monitor version' \
-					  -ex 'monitor jtag_scan' \
+					  -ex 'monitor swdp_scan' \
 					  -ex "attach 1" \
 					  -ex 'load' \
 					  -ex 'compare-sections' build/$(PROJECT).elf
 
 debug: build/$(PROJECT).elf $(OUTFILES)
 	arm-none-eabi-gdb -ex 'target extended-remote $(BMP_PORT)' \
-		              -ex 'monitor jtag_scan' \
+		              -ex 'monitor swdp_scan' \
 					  -ex "attach 1" \
 					  -ex "file build/$(PROJECT).elf"
 

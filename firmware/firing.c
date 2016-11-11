@@ -52,18 +52,20 @@ bool firing_armed()
  */
 
 /* Firing thread */
+static uint8_t firing_channels[3] = {0};
 static THD_WORKING_AREA(firing_thd_wa, 128);
 static THD_FUNCTION(firing_thd, arg)
 {
+    (void)arg;
     int i;
-    uint8_t* firing_channels = (uint8_t*)arg;
     systime_t start;
 
     chMtxLock(&firing_lock);
     start = chVTGetSystemTime();
+    (void)start;
 
     while(chVTTimeElapsedSinceX(start) < MS2ST(FIRING_TIME_MS)) {
-        for(i=0; i<4; i++) {
+        for(i=0; i<3; i++) {
             if(armed && firing_channels[i] != 0) {
                 palSetLine(channel_map[firing_channels[i]]);
                 chThdSleepMilliseconds(10);
@@ -77,14 +79,10 @@ static THD_FUNCTION(firing_thd, arg)
     chMtxUnlock(&firing_lock);
 }
 
-void firing_fire(uint8_t a, uint8_t b, uint8_t c, uint8_t d)
+void firing_fire(uint8_t a, uint8_t b, uint8_t c)
 {
-    uint8_t firing_channels[4] = {0};
-
     /* Do nothing if any channel is invalid. */
-    if(a > NUM_CHANNELS || b > NUM_CHANNELS ||
-       c > NUM_CHANNELS || d > NUM_CHANNELS)
-    {
+    if(a > NUM_CHANNELS || b > NUM_CHANNELS || c > NUM_CHANNELS) {
         return;
     }
 
@@ -94,11 +92,10 @@ void firing_fire(uint8_t a, uint8_t b, uint8_t c, uint8_t d)
     firing_channels[0] = a;
     firing_channels[1] = b;
     firing_channels[2] = c;
-    firing_channels[3] = d;
 
     /* Create a thread to run the firing process. */
     chThdCreateStatic(firing_thd_wa, sizeof(firing_thd_wa), NORMALPRIO,
-                      firing_thd, (void*)firing_channels);
+                      firing_thd, NULL);
 
     chMtxUnlock(&firing_lock);
 }
@@ -120,8 +117,17 @@ static const ADCConversionGroup adc_grp = {
     .sqr3 = ADC_SQR3_SQ1_N(ADC_CHANNEL_IN9),
 };
 
-static uint8_t adc_to_reistance(adcsample_t reading) {
-    float r = (3300.0f * (float)reading) / (4096.0f - (float)reading);
+/* Probably 0.1 ohms... */
+static uint8_t adc_to_resistance(adcsample_t reading, adcsample_t cal) {
+    float r;
+
+    if(reading < cal) {
+        return 0;
+    }
+
+    reading -= cal;
+    r = (3300.0f * (float)reading) / (4096.0f - (float)reading);
+
     if(r >= 255.0f) {
         return 255;
     } else {
@@ -132,6 +138,7 @@ static uint8_t adc_to_reistance(adcsample_t reading) {
 void firing_cont(uint8_t* channels)
 {
     int i;
+    adcsample_t cal;
     adcsample_t samp;
 
     chMtxLock(&firing_lock);
@@ -151,14 +158,20 @@ void firing_cont(uint8_t* channels)
     /* Ensure the firing current is disabled. */
     palClearLine(LINE_ARM);
 
+    /* Calibrate the clamp diode reverse leakage current. */
+    palClearLine(LINE_CONT_EN);
+    chThdSleepMilliseconds(10);
+    adcConvert(&ADCD1, &adc_grp, &cal, 1);
+    cal /= 2;
+
     /* Enable the continuity test current. */
     palSetLine(LINE_CONT_EN);
 
     for(i=1; i<=NUM_CHANNELS; i++) {
         palSetLine(channel_map[i]);
-        chThdSleepMilliseconds(1);
+        chThdSleepMilliseconds(10);
         adcConvert(&ADCD1, &adc_grp, &samp, 1);
-        channels[i-1] = adc_to_reistance(samp);
+        channels[i-1] = adc_to_resistance(samp, cal);
         palClearLine(channel_map[i]);
     }
 
