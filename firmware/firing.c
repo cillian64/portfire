@@ -144,7 +144,7 @@ uint16_t firing_bus_voltage()
 
     /* Take an ADC reading */
     adcStart(&ADCD1, NULL);
-    chThdSleepMilliseconds(10);
+    chThdSleepMilliseconds(100);
     adcConvert(&ADCD1, &adc_grp, &samp, 1);
     adcStop(&ADCD1);
 
@@ -186,9 +186,7 @@ void firing_cont(uint8_t* channels)
     /* Return all 0s if we're currently armed. */
     if(armed) {
         memset((void*)channels, 0, 30);
-        for(i=0; i<NUM_CHANNELS; i++) {
-            channels[i] = 0;
-        }
+        chMtxUnlock(&firing_lock);
         return;
     }
 

@@ -32,6 +32,7 @@
 
 #include "rom.h"
 #include "firing.h"
+#include "net.h"
 
 
 /*===========================================================================*/
@@ -84,22 +85,13 @@ int main(void) {
     /* Initialise lwIP using the new MAC address */
     lwipInit(&lwipopts);
 
+    /* Initialise the network API */
+    net_init();
+
     /* Initialise the firing system */
     firing_disarm();
     firing_init();
 
-    firing_arm();
-    int i;
-    while(true) {
-        for(i=1; i<=30; i+=3) {
-            firing_fire(i, i+1, i+2);
-            chThdSleepMilliseconds(1200);
-        }
-    }
-    firing_disarm();
-
-    while(true) {
-        firing_cont(channels);
-        chThdSleepMilliseconds(1000);
-    }
+    /* Main thread is done now and can sleep forever. */
+    chThdSleep(TIME_INFINITE);
 }

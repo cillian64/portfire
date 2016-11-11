@@ -122,7 +122,7 @@ CSRC = $(STARTUPSRC) \
        $(STREAMSSRC) \
        $(SHELLSRC) \
        $(CHIBIOS)/os/various/evtimer.c \
-       firing.c rom.c main.c
+       firing.c rom.c net.c main.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.

@@ -497,7 +497,7 @@
  *          the system is halted.
  */
 #define CH_CFG_SYSTEM_HALT_HOOK(reason) {                                   \
-  /* System halt code here.*/                                               \
+    GPIOE->ODR |= (1<<8);                                                   \
 }
 
 /**
