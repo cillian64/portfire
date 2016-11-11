@@ -39,7 +39,7 @@ pins:
     CH4: pe13, output, startlow
     CH5: pe12, output, startlow
     CH6: pe11, output, startlow
-    CH7: pe14, output, startlow
+    CH7: pe10, output, startlow
     CH8: pb14, output, startlow
     CH9: pb15, output, startlow
     CH10: pd8, output, startlow

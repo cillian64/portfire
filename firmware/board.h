@@ -140,7 +140,7 @@
 #define GPIOE_STATUS                   7U
 #define GPIOE_ERROR                    8U
 #define GPIOE_TRAFFIC                  9U
-#define GPIOE_PIN10                    10U
+#define GPIOE_CH7                      10U
 #define GPIOE_CH6                      11U
 #define GPIOE_CH5                      12U
 #define GPIOE_CH4                      13U
@@ -248,7 +248,7 @@
 #define LINE_CH4                       PAL_LINE(GPIOE, 13U)
 #define LINE_CH5                       PAL_LINE(GPIOE, 12U)
 #define LINE_CH6                       PAL_LINE(GPIOE, 11U)
-#define LINE_CH7                       PAL_LINE(GPIOE, 14U)
+#define LINE_CH7                       PAL_LINE(GPIOE, 10U)
 #define LINE_CH8                       PAL_LINE(GPIOB, 14U)
 #define LINE_CH9                       PAL_LINE(GPIOB, 15U)
 #define LINE_CONT                      PAL_LINE(GPIOB, 1U)
@@ -775,7 +775,7 @@
  * PE7  - STATUS                       (output, startlow).
  * PE8  - ERROR                        (output, startlow).
  * PE9  - TRAFFIC                      (output, startlow).
- * PE10 - PIN10                        (unused).
+ * PE10 - CH7                          (output, startlow).
  * PE11 - CH6                          (output, startlow).
  * PE12 - CH5                          (output, startlow).
  * PE13 - CH4                          (output, startlow).
@@ -792,7 +792,7 @@
                                         PIN_MODE_OUTPUT(GPIOE_STATUS) | \
                                         PIN_MODE_OUTPUT(GPIOE_ERROR) | \
                                         PIN_MODE_OUTPUT(GPIOE_TRAFFIC) | \
-                                        PIN_MODE_INPUT(GPIOE_PIN10) | \
+                                        PIN_MODE_OUTPUT(GPIOE_CH7) | \
                                         PIN_MODE_OUTPUT(GPIOE_CH6) | \
                                         PIN_MODE_OUTPUT(GPIOE_CH5) | \
                                         PIN_MODE_OUTPUT(GPIOE_CH4) | \
@@ -808,7 +808,7 @@
                                         PIN_OTYPE_PUSHPULL(GPIOE_STATUS) | \
                                         PIN_OTYPE_PUSHPULL(GPIOE_ERROR) | \
                                         PIN_OTYPE_PUSHPULL(GPIOE_TRAFFIC) | \
-                                        PIN_OTYPE_PUSHPULL(GPIOE_PIN10) | \
+                                        PIN_OTYPE_PUSHPULL(GPIOE_CH7) | \
                                         PIN_OTYPE_PUSHPULL(GPIOE_CH6) | \
                                         PIN_OTYPE_PUSHPULL(GPIOE_CH5) | \
                                         PIN_OTYPE_PUSHPULL(GPIOE_CH4) | \
@@ -824,7 +824,7 @@
                                         PIN_OSPEED_HIGH(GPIOE_STATUS) | \
                                         PIN_OSPEED_HIGH(GPIOE_ERROR) | \
                                         PIN_OSPEED_HIGH(GPIOE_TRAFFIC) | \
-                                        PIN_OSPEED_HIGH(GPIOE_PIN10) | \
+                                        PIN_OSPEED_HIGH(GPIOE_CH7) | \
                                         PIN_OSPEED_HIGH(GPIOE_CH6) | \
                                         PIN_OSPEED_HIGH(GPIOE_CH5) | \
                                         PIN_OSPEED_HIGH(GPIOE_CH4) | \
@@ -840,7 +840,7 @@
                                         PIN_PUPD_PULLUP(GPIOE_STATUS) | \
                                         PIN_PUPD_PULLUP(GPIOE_ERROR) | \
                                         PIN_PUPD_PULLUP(GPIOE_TRAFFIC) | \
-                                        PIN_PUPD_PULLUP(GPIOE_PIN10) | \
+                                        PIN_PUPD_PULLUP(GPIOE_CH7) | \
                                         PIN_PUPD_PULLUP(GPIOE_CH6) | \
                                         PIN_PUPD_PULLUP(GPIOE_CH5) | \
                                         PIN_PUPD_PULLUP(GPIOE_CH4) | \
@@ -856,7 +856,7 @@
                                         PIN_OD_LOW(GPIOE_STATUS) | \
                                         PIN_OD_LOW(GPIOE_ERROR) | \
                                         PIN_OD_LOW(GPIOE_TRAFFIC) | \
-                                        PIN_OD_HIGH(GPIOE_PIN10) | \
+                                        PIN_OD_LOW(GPIOE_CH7) | \
                                         PIN_OD_LOW(GPIOE_CH6) | \
                                         PIN_OD_LOW(GPIOE_CH5) | \
                                         PIN_OD_LOW(GPIOE_CH4) | \
@@ -872,7 +872,7 @@
                                         PIN_AFIO_AF(GPIOE_STATUS, 0U))
 #define VAL_GPIOE_AFRH                 (PIN_AFIO_AF(GPIOE_ERROR, 0U) | \
                                         PIN_AFIO_AF(GPIOE_TRAFFIC, 0U) | \
-                                        PIN_AFIO_AF(GPIOE_PIN10, 0U) | \
+                                        PIN_AFIO_AF(GPIOE_CH7, 0U) | \
                                         PIN_AFIO_AF(GPIOE_CH6, 0U) | \
                                         PIN_AFIO_AF(GPIOE_CH5, 0U) | \
                                         PIN_AFIO_AF(GPIOE_CH4, 0U) | \

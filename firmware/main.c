@@ -84,11 +84,18 @@ int main(void) {
     /* Initialise lwIP using the new MAC address */
     lwipInit(&lwipopts);
 
-    palSetLine(LINE_TRAFFIC);
-    chThdSleepMilliseconds(1000);
-    palClearLine(LINE_TRAFFIC);
-    palSetLine(LINE_ERROR);
+    /* Initialise the firing system */
+    firing_disarm();
+    firing_init();
 
+    firing_arm();
+    int i;
+    while(true) {
+        for(i=1; i<=30; i+=3) {
+            firing_fire(i, i+1, i+2);
+            chThdSleepMilliseconds(1200);
+        }
+    }
     firing_disarm();
 
     while(true) {

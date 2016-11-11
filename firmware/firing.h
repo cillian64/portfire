@@ -28,4 +28,16 @@ void firing_fire(uint8_t ch_a, uint8_t ch_b, uint8_t ch_c);
  */
 void firing_cont(uint8_t* channels);
 
+/* Reads firing bus voltage, in millivolts.
+ *
+ * On the whole this should be near 0 when disarmed and near 3300 when armed,
+ * since we clamp to 3.3V in hardware.
+ */
+uint16_t firing_bus_voltage(void);
+
+/* Initialise the firing system.
+ * Spawns a thread to perform firing operations.
+ */
+void firing_init(void);
+
 #endif

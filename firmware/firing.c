@@ -18,8 +18,26 @@ static ioline_t channel_map[NUM_CHANNELS + 1] = {
     LINE_CH26, LINE_CH27, LINE_CH28, LINE_CH29, LINE_CH30
 };
 
+/* ADC configuration. */
+static const ADCConversionGroup adc_grp = {
+    .circular = false,
+    .num_channels = 1,
+    .end_cb = NULL,
+    .error_cb = NULL,
+    .cr1 = 0,
+    .cr2 = ADC_CR2_SWSTART,
+    .smpr1 = 0,
+    .smpr2 = ADC_SMPR2_SMP_AN9(ADC_SAMPLE_480),
+    .sqr1 = ADC_SQR1_NUM_CH(1),
+    .sqr2 = 0,
+    .sqr3 = ADC_SQR3_SQ1_N(ADC_CHANNEL_IN9),
+};
+
 /* Lock used between API and internal thread. */
 static MUTEX_DECL(firing_lock);
+
+/* Semaphore to signal firing thread to use a set of firing channels. */
+static BSEMAPHORE_DECL(firing_sem, false);
 
 /******************************************************************************
  * ARMING
@@ -60,23 +78,33 @@ static THD_FUNCTION(firing_thd, arg)
     int i;
     systime_t start;
 
-    chMtxLock(&firing_lock);
-    start = chVTGetSystemTime();
-    (void)start;
+    while(true) {
 
-    while(chVTTimeElapsedSinceX(start) < MS2ST(FIRING_TIME_MS)) {
-        for(i=0; i<3; i++) {
-            if(armed && firing_channels[i] != 0) {
-                palSetLine(channel_map[firing_channels[i]]);
-                chThdSleepMilliseconds(10);
-                palClearLine(channel_map[firing_channels[i]]);
-            } else {
-                chThdSleepMilliseconds(10);
+        /* Wait to be signalled that it's time to fire. */
+        chBSemWait(&firing_sem);
+
+        /* Acquire the firing mutex for the firing duration. */
+        chMtxLock(&firing_lock);
+
+        /* Fire for the hardcoded firing duration. */
+        start = chVTGetSystemTime();
+        while(chVTTimeElapsedSinceX(start) < MS2ST(FIRING_TIME_MS)) {
+            /* Loop through up to three channels to fire simultaneously. */
+            for(i=0; i<3; i++) {
+                if(armed && firing_channels[i] != 0) {
+                    /* Send 10ms pulse of firing current into channel. */
+                    palSetLine(channel_map[firing_channels[i]]);
+                    chThdSleepMilliseconds(10);
+                    palClearLine(channel_map[firing_channels[i]]);
+                } else {
+                    /* Delay when not firing in this time slot */
+                    chThdSleepMilliseconds(10);
+                }
             }
         }
-    }
 
-    chMtxUnlock(&firing_lock);
+        chMtxUnlock(&firing_lock);
+    }
 }
 
 void firing_fire(uint8_t a, uint8_t b, uint8_t c)
@@ -86,6 +114,9 @@ void firing_fire(uint8_t a, uint8_t b, uint8_t c)
         return;
     }
 
+    /* Acquire the firing mutex.
+     * This will block until any existing firing operation is completed.
+     */
     chMtxLock(&firing_lock);
 
     /* Update the set of channels to be firing. */
@@ -93,30 +124,39 @@ void firing_fire(uint8_t a, uint8_t b, uint8_t c)
     firing_channels[1] = b;
     firing_channels[2] = c;
 
-    /* Create a thread to run the firing process. */
-    chThdCreateStatic(firing_thd_wa, sizeof(firing_thd_wa), NORMALPRIO,
-                      firing_thd, NULL);
+    /* Signal the firing thread to begin firing. */
+    chBSemSignal(&firing_sem);
 
     chMtxUnlock(&firing_lock);
+}
+
+void firing_init()
+{
+    chThdCreateStatic(firing_thd_wa, sizeof(firing_thd_wa), NORMALPRIO,
+                      firing_thd, NULL);
+}
+
+uint16_t firing_bus_voltage()
+{
+    adcsample_t samp;
+
+    chMtxLock(&firing_lock);
+
+    /* Take an ADC reading */
+    adcStart(&ADCD1, NULL);
+    chThdSleepMilliseconds(10);
+    adcConvert(&ADCD1, &adc_grp, &samp, 1);
+    adcStop(&ADCD1);
+
+    chMtxUnlock(&firing_lock);
+
+    /* Convert to a voltage */
+    return (uint16_t)((float)samp * (3300.0f / 4096.0f));
 }
 
 /******************************************************************************
  * CONTINUITY
  */
-static const ADCConversionGroup adc_grp = {
-    .circular = false,
-    .num_channels = 1,
-    .end_cb = NULL,
-    .error_cb = NULL,
-    .cr1 = 0,
-    .cr2 = ADC_CR2_SWSTART,
-    .smpr1 = 0,
-    .smpr2 = ADC_SMPR2_SMP_AN9(ADC_SAMPLE_480),
-    .sqr1 = ADC_SQR1_NUM_CH(1),
-    .sqr2 = 0,
-    .sqr3 = ADC_SQR3_SQ1_N(ADC_CHANNEL_IN9),
-};
-
 /* Probably 0.1 ohms... */
 static uint8_t adc_to_resistance(adcsample_t reading, adcsample_t cal) {
     float r;
