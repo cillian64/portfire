@@ -1,3 +1,5 @@
+#include <string.h>
+
 #include "ch.h"
 
 #include "net.h"
@@ -6,6 +8,7 @@
 #include "lwip/opt.h"
 #include "lwip/arch.h"
 #include "lwip/api.h"
+#include "lwip/netif.h"
 
 #define NET_PORT (9090)
 
@@ -125,7 +128,59 @@ static THD_FUNCTION(net_thd, arg)
     }
 }
 
+struct autodiscovery_packet {
+    char magic[8];
+    uint32_t ip;
+    uint8_t mac[6];
+};
+
+static char autodiscovery_magic[8] = "PORTFIRE";
+
+static void fill_autodiscovery_packet(struct autodiscovery_packet* pkt)
+{
+    memcpy(pkt->magic, autodiscovery_magic, sizeof(autodiscovery_magic));
+    pkt->ip = netif_default->ip_addr.addr;
+    pkt->mac[0] = netif_default->hwaddr[0];
+    pkt->mac[1] = netif_default->hwaddr[1];
+    pkt->mac[2] = netif_default->hwaddr[2];
+    pkt->mac[3] = netif_default->hwaddr[3];
+    pkt->mac[4] = netif_default->hwaddr[4];
+    pkt->mac[5] = netif_default->hwaddr[5];
+}
+
+static THD_WORKING_AREA(autodiscovery_thd_wa, 1024);
+static THD_FUNCTION(autodiscovery_thd, arg)
+{
+    (void)arg;
+
+    struct netconn *conn;
+    struct netbuf *buf;
+    struct autodiscovery_packet pkt;
+    void* buf_data;
+
+    conn = netconn_new(NETCONN_UDP);
+    LWIP_ERROR("net: invalid conn", (conn != NULL), chThdExit(MSG_RESET););
+
+    netconn_bind(conn, IP_ADDR_ANY, NET_PORT+1);
+    netconn_connect(conn, IP_ADDR_BROADCAST, NET_PORT);
+
+    while(true) {
+        palSetLine(LINE_TRAFFIC);
+        fill_autodiscovery_packet(&pkt);
+        buf = netbuf_new();
+        buf_data = netbuf_alloc(buf, sizeof(struct autodiscovery_packet));
+        memcpy(buf_data, (void*)&pkt, sizeof(struct autodiscovery_packet));
+        netconn_send(conn, buf);
+        netbuf_delete(buf);
+        palClearLine(LINE_TRAFFIC);
+
+        chThdSleepMilliseconds(1000);
+    }
+}
+
 void net_init()
 {
     chThdCreateStatic(net_thd_wa, sizeof(net_thd_wa), NORMALPRIO, net_thd, 0);
+    chThdCreateStatic(autodiscovery_thd_wa, sizeof(autodiscovery_thd_wa),
+                      NORMALPRIO, autodiscovery_thd, 0);
 }

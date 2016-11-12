@@ -61,9 +61,9 @@ int main(void) {
     /* Set up our IP details */
     uint8_t mac_addr[6];
     struct ip_addr address, netmask, gateway;
-    IP4_ADDR(&address, 192, 168, 2, 250);
-    IP4_ADDR(&netmask, 255, 255, 255, 0);
-    IP4_ADDR(&gateway, 192, 168, 2, 1);
+    IP4_ADDR(&address, 0, 0, 0, 0);
+    IP4_ADDR(&netmask, 255, 255, 255, 255);
+    IP4_ADDR(&gateway, 0, 0, 0, 0);
     lwipthread_opts_t lwipopts = {
         .macaddress = mac_addr,
         .address = address.addr,
