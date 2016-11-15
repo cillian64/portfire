@@ -16,7 +16,7 @@ static const char net_ok_msg[] = "OK\r\n";
 
 static void net_handle_continuity(struct netconn *conn)
 {
-    uint8_t channels[30];
+    uint8_t channels[31];
     firing_cont(channels);
     netconn_write(conn, channels, sizeof(channels), NETCONN_COPY);
 }

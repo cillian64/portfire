@@ -213,6 +213,11 @@ void firing_cont(uint8_t* channels)
         palClearLine(channel_map[i]);
     }
 
+    /* Measure bus voltage with no channels active. */
+    chThdSleepMilliseconds(10);
+    adcConvert(&ADCD1, &adc_grp, &samp, 1);
+    channels[NUM_CHANNELS] = (uint8_t)((float)samp * (33.0f / 4096.0f));
+
     /* Disable continuity test current. */
     palClearLine(LINE_CONT_EN);
 

@@ -25,6 +25,7 @@ for ch in range(30):
     print("CH{:02}: {}    ".format(ch+1, conts[ch]), end='')
     if ch % 5 == 4:
         print()
+print("Continuity bus voltage: {:.1f}V".format(int(conts[-1]) / 10))
 
 print("Bus voltage...")
 v = struct.unpack("<H", txrx(b'b'))[0]

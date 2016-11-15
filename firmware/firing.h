@@ -22,7 +22,13 @@ void firing_fire(uint8_t ch_a, uint8_t ch_b, uint8_t ch_c);
 /* Reports continuity on all channels.
  *
  * CAN ONLY BE USED WHILE DISARMED. Reports all 0s if called while armed.
- * `channels` is written with 30 bytes.
+ * `channels` is written with 31 bytes.
+ *
+ * The first 30 entries are channel resistances in ohms, 0-254, or "high
+ * impedance", 255. The final entry is the bus voltage (in 0.1V/LSb) with
+ * continuity testing enabled but no channels are being sensed:
+ * this should be 3.3V unless a fault is causing a channel to conduct,
+ * causing the voltage to drop to 0, in which case don't arm the system.
  *
  * Each channel is written with an approximate resistance in ohms.
  */
