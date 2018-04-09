@@ -1,0 +1,27 @@
+[package]
+name = "portfireblink"
+version = "0.1.0"
+authors = ["Adam Greig <adam@adamgreig.com>"]
+
+[dependencies]
+cortex-m = "0.4.3"
+cortex-m-semihosting = "0.2.0"
+vcell = "0.1.0"
+
+[dependencies.cortex-m-rt]
+version = "0.3.14"
+features = ["abort-on-panic"]
+
+[dependencies.stm32f4]
+path = "/home/adam/Projects/stm32-rs/stm32f4"
+features = ["stm32f407", "rt"]
+
+[profile.dev]
+codegen-units = 1
+incremental = false
+
+[profile.release]
+debug = true
+lto = true
+codegen-units = 1
+incremental = false
